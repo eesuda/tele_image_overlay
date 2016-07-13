@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tele Tests</title>
+
+    <style type="text/css">
+        body {
+            background: #fff;
+            color: #000;
+            font: 20px "Helvetica Neue" , "Source Sans Pro" , "Noto Sans" , source-sans-pro, Helvetica, Arial, "Source Han Sans SC" , "Noto Sans CJK SC" , "Source Han Sans CN" , "Source Han Sans" , "Microsoft Yahei" , STHeiti, STXihei, "Heiti SC" , Hei, "Hiragino Sans GB" , SimHei, sans-serif;
+            line-height: 1;
+            -webkit-text-size-adjust: 100%;
+            width: 100%;
+        }
+    </style>
+    <script>
+        setInterval(function () {
+            document.getElementById("camera").src="/tele/image.jpg?" + Date.now();
+        }, 2000);
+
+    </script>
+</head>
+<body>
+    <img id="camera" src="/tele/image.jpg" />
+</body>
+</html>
